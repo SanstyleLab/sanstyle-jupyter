@@ -39,3 +39,4 @@ parts:
   - file: other/index
     sections:
     - glob: other/**
+  - file: todo
