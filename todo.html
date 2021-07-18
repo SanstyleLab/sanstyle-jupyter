@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>索引</title>
+    <title>学习计划</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -92,10 +92,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://sanstylelab.github.io/sanstyle-jupyter/genindex.html" />
+    <link rel="canonical" href="https://sanstylelab.github.io/sanstyle-jupyter/todo.html" />
     <link rel="shortcut icon" href="_static/page-logo.jfif"/>
-    <link rel="index" title="索引" href="#" />
+    <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="话题" href="other/topic.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -246,7 +247,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   混沌
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="about/index.html">
    关于
@@ -291,8 +292,8 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="todo.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    学习计划
   </a>
  </li>
@@ -352,6 +353,23 @@ commentsRunWhenDOMLoaded(addUtterances);
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/todo.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -363,7 +381,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/SanstyleLab/sanstyle-jupyter/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/SanstyleLab/sanstyle-jupyter/issues/new?title=Issue%20on%20page%20%2Ftodo.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -384,6 +402,19 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nbgrader">
+   nbgrader
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -392,19 +423,56 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-
-<h1 id="index">索引</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="id1">
+<h1>学习计划<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference external" href="https://ipyparallel.readthedocs.io/en/latest/">使用IPython进行并行计算</a></p></li>
+</ul>
+<div class="section" id="nbgrader">
+<h2>nbgrader<a class="headerlink" href="#nbgrader" title="永久链接至标题">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://nbgrader.readthedocs.io/en/stable/"><strong>nbgrader</strong> 文档</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jupyter/nbgrader">jupyter/nbgrader: A system for assigning and grading notebooks (github.com)</a></p></li>
+<li><p><a class="reference external" href="http://kristenthyng.com/blog/2016/09/07/jupyterhub+nbgrader/">Kristen M. Thyng, Ph.D. : How to use JupyterHub with nbgrader (kristenthyng.com)</a></p></li>
+<li><p><a class="reference external" href="https://blog.csdn.net/qq_40283123/article/details/103887220">jupyterhub+nbgrader配置 实现自动批改Python编程作业_qq_40283123的博客-CSDN博客</a></p></li>
+<li><p><a class="reference external" href="https://ldssa.github.io/wiki/Instructors/Using-nbgrader-for-Exercise-Notebooks/">Using nbgrader for Exercise Notebooks | Wiki Lisbon Data Science Academy (ldssa.github.io)</a></p></li>
+<li><p><a class="reference external" href="https://jupyterhub-deploy-teaching.readthedocs.io/en/latest/use-nbgrader.html">Using nbgrader — JupyterHub for Teaching 1.0 documentation (jupyterhub-deploy-teaching.readthedocs.io)</a></p></li>
+<li><p><a class="reference external" href="https://scicomp.aalto.fi/aalto/jupyterhub-instructors/nbgrader/">Nbgrader basics — Aalto scientific computing</a></p></li>
+<li><p><a class="reference external" href="https://scicomp.aalto.fi/aalto/jupyterhub-instructors/nbgrader-hints/">nbgrader hints — Aalto scientific computing</a></p></li>
+<li><p><a class="reference external" href="http://theoryandpractice.org/stats-ds-book/nbgrader.html">nbgrader — Statistics and Data Science (theoryandpractice.org)</a></p></li>
+<li><p><a class="reference external" href="https://doc.cocalc.com/howto/nbgrader.html">NBgrader — CoCalc Manual documentation</a></p></li>
+<li><p><a class="reference external" href="https://github.com/topics/nbgrader">nbgrader · GitHub Topics</a></p></li>
+<li><p><a class="reference external" href="https://noteable.edina.ac.uk/nbguide/">nbgrader Guide (edina.ac.uk)</a></p></li>
+</ul>
+</div>
 </div>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "SanstyleLab/sanstyle-jupyter",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="other/topic.html" title="previous page">话题</a>
 
         </div>
         

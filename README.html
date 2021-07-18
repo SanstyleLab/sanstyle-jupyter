@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jupyter Dash Heroku</title>
+    <title>Sanstyle Jupyter</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -69,7 +69,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/dash-heroku");
+    script.setAttribute("repo", "SanstyleLab/sanstyle-jupyter");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -92,7 +92,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://xinetzone.github.io/dash-heroku/README.html" />
+    <link rel="canonical" href="https://sanstylelab.github.io/sanstyle-jupyter/README.html" />
     <link rel="shortcut icon" href="_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -141,15 +141,20 @@ commentsRunWhenDOMLoaded(addUtterances);
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="start/topic.html">
-     某个主题
+    <a class="reference internal" href="start/00_intro.html">
+     Jupyter 简介
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="start/01_install.html">
+     安装 Jupyter 软件
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="basics/index.html">
-   指南
+   基础
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -159,7 +164,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="basics/topic.html">
-     基础
+     某个主题
     </a>
    </li>
   </ul>
@@ -287,6 +292,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="todo.html">
+   学习计划
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -367,11 +377,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/dash-heroku"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/SanstyleLab/sanstyle-jupyter"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/dash-heroku/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/SanstyleLab/sanstyle-jupyter/issues/new?title=Issue%20on%20page%20%2FREADME.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -400,11 +410,9 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="jupyter-dash-heroku">
-<h1>Jupyter Dash Heroku<a class="headerlink" href="#jupyter-dash-heroku" title="永久链接至标题">¶</a></h1>
-<p><a class="reference external" href="https://github.com/xinetzone/dash-heroku/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/xinetzone/dash-heroku" /></a> <a class="reference external" href="https://github.com/xinetzone/dash-heroku/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/xinetzone/dash-heroku" /></a> <a class="reference external" href="https://github.com/xinetzone/dash-heroku/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/xinetzone/dash-heroku" /></a> <a class="reference external" href="https://github.com/xinetzone/dash-heroku/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/xinetzone/dash-heroku" /></a>  <img alt="repo size" src="https://img.shields.io/github/repo-size/xinetzone/dash-heroku.svg" /> <a class="reference external" href="https://github.com/xinetzone/dash-heroku/graphs/contributors"><img alt="contributors" src="https://img.shields.io/github/contributors/xinetzone/dash-heroku.svg" /></a> <a class="reference external" href="https://github.com/xinetzone/dash-heroku/watchers"><img alt="watcher" src="https://img.shields.io/github/watchers/xinetzone/dash-heroku.svg" /></a> <img alt="" src="https://github.com/xinetzone/dash-heroku/actions/workflows/docs.yml/badge.svg" /></p>
-<p><a class="reference external" href="https://dash-book.herokuapp.com/">Open Dash App</a>。更多内容见：<a class="reference external" href="https://xinetzone.github.io/dash-book/README.html">Dash 手册</a>。</p>
-<p>提供支持 Heroku 部署 Dash 服务的 <a class="reference external" href="https://xinetzone.github.io/wiki/sanstyle/01_book.html#term-Stanstyle-Book" title="(在 Python)"><span class="xref std std-term">Stanstyle Book</span></a>。</p>
+  <div class="section" id="sanstyle-jupyter">
+<h1>Sanstyle Jupyter<a class="headerlink" href="#sanstyle-jupyter" title="永久链接至标题">¶</a></h1>
+<p><a class="reference external" href="https://github.com/SanstyleLab/sanstyle-jupyter/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/SanstyleLab/sanstyle-jupyter" /></a> <a class="reference external" href="https://github.com/SanstyleLab/sanstyle-jupyter/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/SanstyleLab/sanstyle-jupyter" /></a> <a class="reference external" href="https://github.com/SanstyleLab/sanstyle-jupyter/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/SanstyleLab/sanstyle-jupyter" /></a> <a class="reference external" href="https://github.com/SanstyleLab/sanstyle-jupyter/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/SanstyleLab/sanstyle-jupyter" /></a>  <img alt="repo size" src="https://img.shields.io/github/repo-size/SanstyleLab/sanstyle-jupyter.svg" /> <a class="reference external" href="https://github.com/SanstyleLab/sanstyle-jupyter/graphs/contributors"><img alt="contributors" src="https://img.shields.io/github/contributors/SanstyleLab/sanstyle-jupyter.svg" /></a> <a class="reference external" href="https://github.com/SanstyleLab/sanstyle-jupyter/watchers"><img alt="watcher" src="https://img.shields.io/github/watchers/SanstyleLab/sanstyle-jupyter.svg" /></a> <img alt="" src="https://github.com/SanstyleLab/sanstyle-jupyter/actions/workflows/docs.yml/badge.svg" /></p>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -421,7 +429,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/dash-heroku",
+            repo: "SanstyleLab/sanstyle-jupyter",
             ref: "main",
         },
         codeMirrorConfig: {

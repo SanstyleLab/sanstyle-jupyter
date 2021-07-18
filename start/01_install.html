@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>某个主题</title>
+    <title>安装 Jupyter 软件</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -69,7 +69,7 @@ var addUtterances = () => {
     script.src = "https://utteranc.es/client.js";
     script.async = "async";
 
-    script.setAttribute("repo", "xinetzone/dash-heroku");
+    script.setAttribute("repo", "SanstyleLab/sanstyle-jupyter");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute("theme", "github-light");
     script.setAttribute("label", "💬 comment");
@@ -92,12 +92,12 @@ commentsRunWhenDOMLoaded(addUtterances);
         const thebe_selector_output = ".output,.cell_output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://xinetzone.github.io/dash-heroku/start/topic.html" />
+    <link rel="canonical" href="https://sanstylelab.github.io/sanstyle-jupyter/start/01_install.html" />
     <link rel="shortcut icon" href="../_static/page-logo.jfif"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="指南" href="../basics/index.html" />
-    <link rel="prev" title="快速上手" href="index.html" />
+    <link rel="next" title="基础" href="../basics/index.html" />
+    <link rel="prev" title="Jupyter 简介" href="00_intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -141,16 +141,21 @@ commentsRunWhenDOMLoaded(addUtterances);
    </i>
   </label>
   <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="00_intro.html">
+     Jupyter 简介
+    </a>
+   </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     某个主题
+     安装 Jupyter 软件
     </a>
    </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../basics/index.html">
-   指南
+   基础
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -160,7 +165,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   <ul>
    <li class="toctree-l2">
     <a class="reference internal" href="../basics/topic.html">
-     基础
+     某个主题
     </a>
    </li>
   </ul>
@@ -288,6 +293,11 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
   </ul>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../todo.html">
+   学习计划
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -352,7 +362,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/start/topic.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/start/01_install.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -368,11 +378,11 @@ commentsRunWhenDOMLoaded(addUtterances);
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/xinetzone/dash-heroku"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/SanstyleLab/sanstyle-jupyter"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/xinetzone/dash-heroku/issues/new?title=Issue%20on%20page%20%2Fstart/topic.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/SanstyleLab/sanstyle-jupyter/issues/new?title=Issue%20on%20page%20%2Fstart/01_install.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -401,15 +411,146 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="id1">
-<h1>某个主题<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+  <div class="section" id="jupyter">
+<h1>安装 Jupyter 软件<a class="headerlink" href="#jupyter" title="永久链接至标题">¶</a></h1>
+<p>在你的电脑上使用木星实验室或经典的 Jupyter 笔记本，只需几分钟。</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>如果你还没有安装 <code class="docutils literal notranslate"><span class="pre">mamba</span></code> 或 <code class="docutils literal notranslate"><span class="pre">conda</span></code>，你可以从 <a class="reference external" href="https://github.com/conda-forge/miniforge#mambaforge">miniforge</a> 发行版开始。</p>
+</div>
+<div class="tabbed-set docutils">
+<input checked="checked" id="d85094b2-484e-427c-88af-32be77f6270f" name="43144506-3f52-4aad-bc2e-b4edc32aa176" type="radio">
+</input><label class="tabbed-label" for="d85094b2-484e-427c-88af-32be77f6270f">
+JupyterLab</label><div class="tabbed-content docutils">
+<p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html">安装指南</a>包含更详细的说明。</p>
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">可以使用 <code class="docutils literal notranslate"><span class="pre">mamba</span></code> 和 <code class="docutils literal notranslate"><span class="pre">conda</span></code> 安装：</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba install -c conda-forge jupyterlab
+</pre></div>
+</div>
+<p class="card-text">或者</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge jupyterlab
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">也可以使用 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装：</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install jupyterlab
+</pre></div>
+</div>
+</div>
+<div class="card-footer docutils">
+<p class="card-text">如果使用 <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">--user</span></code> 进行安装，则必须将用户级 <code class="docutils literal notranslate"><span class="pre">bin</span></code> 目录添加到 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 环境变量中，以便启动 <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span></code>。如果你使用的是 Unix 衍生工具（FreeBSD, GNU / Linux, OS X），你可以使用 <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PATH=&quot;$HOME/.local/bin:$PATH&quot;</span></code> 命令来实现这一点。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>安装完成后，启动 JupyterLab：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>jupyter-lab
+</pre></div>
+</div>
+</div>
+<input id="04a1b13b-3a0f-4843-8ee0-f57e26892d53" name="43144506-3f52-4aad-bc2e-b4edc32aa176" type="radio">
+</input><label class="tabbed-label" for="04a1b13b-3a0f-4843-8ee0-f57e26892d53">
+Jupyter Notebook</label><div class="tabbed-content docutils">
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">可以使用 <code class="docutils literal notranslate"><span class="pre">mamba</span></code> 和 <code class="docutils literal notranslate"><span class="pre">conda</span></code> 安装：</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba install -c conda-forge notebook
+</pre></div>
+</div>
+<p class="card-text">或者</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge notebook
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">也可以使用 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装：</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install notebook
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>安装完成后，启动 Jupyter Notebook：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>jupyter notebook
+</pre></div>
+</div>
+<p>有关更多细节，请参见<a class="reference external" href="https://jupyter.readthedocs.io/en/latest/running.html#running">运行笔记本</a>。</p>
+</div>
+<input id="87344bf5-d4d9-426c-9f7a-7a602d794d9a" name="43144506-3f52-4aad-bc2e-b4edc32aa176" type="radio">
+</input><label class="tabbed-label" for="87344bf5-d4d9-426c-9f7a-7a602d794d9a">
+Voilà</label><div class="tabbed-content docutils">
+<div class="sphinx-bs container pb-4 docutils">
+<div class="row docutils">
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">可以使用 <code class="docutils literal notranslate"><span class="pre">mamba</span></code> 和 <code class="docutils literal notranslate"><span class="pre">conda</span></code> 安装：</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mamba install -c conda-forge voila
+</pre></div>
+</div>
+<p class="card-text">或者</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install -c conda-forge voila
+</pre></div>
+</div>
+</div>
+<div class="card-footer docutils">
+<p class="card-text">有关更详细的说明，请查阅<a class="reference external" href="https://voila.readthedocs.io/en/stable/install.html">安装指南</a>。</p>
+</div>
+</div>
+</div>
+<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
+<div class="card w-100 shadow docutils">
+<div class="card-header docutils">
+<p class="card-text">也可以使用 <code class="docutils literal notranslate"><span class="pre">pip</span></code> 安装：</p>
+</div>
+<div class="card-body docutils">
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install voila
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
         binderOptions: {
-            repo: "xinetzone/dash-heroku",
+            repo: "SanstyleLab/sanstyle-jupyter",
             ref: "main",
         },
         codeMirrorConfig: {
@@ -430,8 +571,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="index.html" title="previous page">快速上手</a>
-    <a class='right-next' id="next-link" href="../basics/index.html" title="next page">指南</a>
+    <a class='left-prev' id="prev-link" href="00_intro.html" title="previous page">Jupyter 简介</a>
+    <a class='right-next' id="next-link" href="../basics/index.html" title="next page">基础</a>
 
         </div>
         
